@@ -25,16 +25,18 @@ public class Controller
 	public boolean validInt(String example)
 	{
 		boolean isValid = false;
+		//creates variable to be returned
 		try
 		{
-			Integer.parseInt(example);
-			isValid = true;
+			Integer.parseInt(example);//tries to turn example into an int
+			isValid = true;//if example>>>int, isValid = true (return)
 		}
 		catch (NumberFormatException e)
 		{
-			System.out.println("Type in a valid int value plz.");
+			System.out.println("Type in a valid int value plz.");//else output this to console
+			//isValid kept false
 		}
-		return isValid;
+		return isValid;//isValid returned true/false for example = int
 	}
 
 	public boolean valitDouble(String example)
